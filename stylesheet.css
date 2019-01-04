@@ -1,0 +1,160 @@
+
+body{
+    background-color: darkslategrey;
+    opacity: 1;
+    transition: 2.5s opacity;
+  }
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  } 
+  html{
+    scroll-behavior: smooth
+  }
+  .panel{
+    padding: 80px;
+    height: 1000px;
+    width: 100%;
+    align-content: center;
+    background-color: darkslategrey;
+    border-style: solid;
+    border-color: aliceblue
+  }
+  .mainHeader{
+    color: rgb(164, 169, 173);
+    font-size: 60px;
+    /*text-shadow: 2mm 2mm 2mm black; */
+  }
+  h1{
+    size: 50px;
+  }
+  p{
+    color: rgb(130, 158, 180);
+    font-family: "Didot, serif";
+    font-size: 17px;
+  }
+  #nav{
+    background-color: darkslategrey;
+  }
+  .nav-link{
+    color:  aliceblue;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    font: menu;
+  }
+  .nav-link::first-letter{
+    color: rgb(164, 169, 173);
+  }
+      /*effect-underline*/
+  a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    color: aliceblue;
+  }
+  .nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  #name{
+    font-size: 100px;
+    /*text-shadow: 2mm 2mm 2mm black;*/
+  }
+  h2{
+    color: rgb(164, 169, 173);
+  }
+  h4{
+    color: rgb(130, 158, 180);
+    font-size: 20px;
+    /* text-shadow: 2mm 2mm 1mm black; */
+    font-family: "Didot, serif";
+  }
+  ul{
+    color: rgb(130, 158, 180);
+    font-family: "Didot, serif";
+  }
+  img {
+    filter: url(filters.opacity);
+    /* Firefox 3.5+ */
+    filter: opacity(.2);
+    /* IE6-9 */
+    -webkit-filter: opacity(.2);
+    /* Google Chrome & Safari 6+ */
+    border-radius: 50%;
+  }
+  img:hover{
+    filter: none;
+    -webkit-filter: none;
+  }
+  h3{
+    font-size: 70px;
+    font-family: "Didot, serif";
+  }
+  .form-group{
+    color: aliceblue;
+  }
+  .fa{
+    padding: 20px;
+    font-size: 60px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: rgb(164, 169, 173);
+  }
+  .smallnav{
+    padding: 5px;
+    font-size: 16px;
+    width: 23px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: aliceblue;
+    margin-top: 83px;
+  }
+  .content{
+    margin-top: 40px;
+  }
+  .page-footer{
+    margin-top: 20%;
+    color: aliceblue;
+  }
+  #accordionBtn{
+    color: rgb(164, 169, 173);
+    background-color:  rgb(164, 169, 173);
+    background-color: darkslategrey;
+    font-size: 20px;
+  }
+  #emailBtn{
+    margin-left: 30%;
+    color: aliceblue;
+    background-color:  rgb(164, 169, 173);
+  }
+  #plinks{
+    color: aliceblue;
+  }
+  .accordion{
+    border-color: aliceblue;
+  }
+  .card-body{
+    background-color: darkslategrey;
+    color: rgb(130, 158, 180);
+    padding: 10px;
+    font-family: "Didot, serif";
+    font-size: 18px;
+  }
+  .card-header{
+    background-color: darkslategrey;
+    padding: 0%;
+  }
